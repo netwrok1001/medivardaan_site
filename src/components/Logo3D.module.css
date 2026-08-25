@@ -1,0 +1,45 @@
+.logo {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  text-decoration: none;
+  transition: transform 0.2s ease, filter 0.2s ease;
+}
+
+.logo img {
+  display: block;
+  width: 100%;
+  height: auto;
+  filter: brightness(0) invert(1) drop-shadow(0 8px 18px rgba(14, 90, 72, 0.35));
+}
+
+.logo:hover,
+.logo:focus-visible {
+  transform: translateY(-1px);
+  filter: drop-shadow(0 0 12px rgba(80, 238, 187, 0.35));
+}
+
+.logoCaption {
+  position: absolute;
+  right: 8px;
+  bottom: -4px;
+  color: rgba(189, 244, 219, 0.8);
+  font: 8px 'DM Mono', monospace;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+  .logo {
+    width: 110px;
+  }
+
+  .logoCaption {
+    right: 4px;
+    bottom: -2px;
+    font-size: 7px;
+  }
+}
