@@ -84,6 +84,7 @@ const testimonials = [
     "RS",
   ],
 ];
+const workflowVideoUrl = "https://www.youtube.com/embed/fyUDjJH6Zm8";
 
 export default function LandingPage() {
   const pageRef = useRef(null);
@@ -377,6 +378,22 @@ export default function LandingPage() {
           }
           description="Medivardaan connects the moments in between, so your team can focus on the moment that matters most."
         />
+        <div className={styles.workflowVideo}>
+          <h3>How Medivardaan Works</h3>
+          <p>A seamless digital workflow for clinics — from registration to billing.</p>
+          <div className={styles.responsiveVideo}>
+            <iframe
+              src={workflowVideoUrl}
+              title="How Medivardaan digitizes patient management, appointments, and billing"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            />
+          </div>
+          <span className={styles.videoCaption}>
+            Watch how Medivardaan digitizes patient management, appointments, and billing.
+          </span>
+        </div>
         <div className={styles.steps}>
           {steps.map(([number, title, text], index) => (
             <div className={`${styles.step} reveal`} key={number}>
