@@ -1,6 +1,7 @@
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import medivardaanWorkflowVideo from "../assets/medi-edit.mp4";
 import {
   ArrowRight,
   BarChart3,
@@ -377,6 +378,23 @@ export default function LandingPage() {
           }
           description="Medivardaan connects the moments in between, so your team can focus on the moment that matters most."
         />
+        <div className={styles.workflowVideo}>
+          <h3>How Medivardaan Works</h3>
+          <p>A seamless digital workflow for clinics — from registration to billing.</p>
+          <video
+            className={styles.responsiveVideo}
+            controls
+            muted
+            loop
+            playsInline
+            src={medivardaanWorkflowVideo}
+          >
+            Your browser does not support the video tag.
+          </video>
+          <p className={styles.videoCaption}>
+            Watch how Medivardaan digitizes patient management, appointments, and billing.
+          </p>
+        </div>
         <div className={styles.steps}>
           {steps.map(([number, title, text], index) => (
             <div className={`${styles.step} reveal`} key={number}>
