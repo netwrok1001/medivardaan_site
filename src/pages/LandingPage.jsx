@@ -197,9 +197,10 @@ export default function LandingPage() {
         </div>
         <div className={styles.heroContent}>
           <div className="heroReveal">
-            <span className={styles.statusDot} /> Built for better care{" "}
-            <span className={styles.statusLine} />
-          </div>
+    <span className={styles.statusDot} /> 
+    <span style={{ color: "var(--lime)" }}>Built for better care</span>{" "}
+    <span className={styles.statusLine} />
+  </div>
           <h1 className="heroReveal">
             Digitize your clinic.
             <br />
@@ -237,27 +238,28 @@ export default function LandingPage() {
           <div className={styles.metricRow}>
             <div>
               <small>Appointments</small>
-              <strong>24,680</strong>
+              <strong style={{ fontSize: "14px" }}>24,680</strong>
+
               <span className={styles.greenText}>+12.5%</span>
             </div>
             <div>
               <small>Patients</small>
-              <strong>93,568</strong>
+              <strong style={{ fontSize: "14px" }}>93,568</strong>
               <span className={styles.greenText}>+8.2%</span>
             </div>
             <div>
               <small>Procedures</small>
-              <strong>1,22,590</strong>
+              <strong style={{ fontSize: "14px" }}>1,22,590</strong>
               <span className={styles.greenText}>+18.4%</span>
             </div>
             <div>
               <small>Total revenue</small>
-              <strong>₹65.81 Cr</strong>
+              <strong style={{ fontSize: "14px" }}>₹65.81 Cr</strong>
               <span className={styles.greenText}>+14.6%</span>
             </div>
             <div>
-              <small>Revenue / patient</small>
-              <strong>₹7,033</strong>
+              <small style={{ fontSize: "10px" }}>Revenue/ patient</small>
+              <strong style={{ fontSize: "14px" }}>₹7,033</strong>
               <span className={styles.greenText}>+5.8%</span>
             </div>
           </div>
@@ -378,7 +380,7 @@ export default function LandingPage() {
           }
           description="Medivardaan connects the moments in between, so your team can focus on the moment that matters most."
         />
-        <div className={styles.workflowVideo}>
+        {/* <div className={styles.workflowVideo}>
           <h3>How Medivardaan Works</h3>
           <p>A seamless digital workflow for clinics — from registration to billing.</p>
           <div className={styles.responsiveVideo}>
@@ -393,7 +395,7 @@ export default function LandingPage() {
           <span className={styles.videoCaption}>
             Watch how Medivardaan digitizes patient management, appointments, and billing.
           </span>
-        </div>
+        </div> */}
         <div className={styles.steps}>
           {steps.map(([number, title, text], index) => (
             <div className={`${styles.step} reveal`} key={number}>
