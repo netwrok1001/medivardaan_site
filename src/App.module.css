@@ -309,15 +309,6 @@
 	font-weight: bold; /* bolder */
 	text-shadow: 0 0 8px var(--lime);
 	border-bottom: 2px solid var(--lime);
-
-	
-animation: pulse 1.5s infinite;
-
-@keyframes pulse {
-  0% { text-shadow: 0 0 5px var(--lime); }
-  50% { text-shadow: 0 0 15px var(--lime); }
-  100% { text-shadow: 0 0 5px var(--lime); }
-}
 }
 
 .statusDot,
