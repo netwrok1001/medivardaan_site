@@ -200,6 +200,8 @@
 	border-radius: 50%;
 	transform: rotateX(64deg) rotateZ(-18deg);
 	box-shadow: 0 0 22px rgba(65, 214, 181, .18);
+	top: 80%;
+	height: 26px;
 }
 
 .orbitRing::after {
@@ -216,7 +218,7 @@
 
 .careCore {
 	position: absolute;
-	top: 57px;
+	top: 98px;
 	left: 57px;
 	width: 136px;
 	height: 136px;
